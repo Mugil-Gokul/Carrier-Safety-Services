@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+  font-family: 'Courier New', Courier, monospace;
+} */
+
+body {
+  @apply min-h-screen;
+  background: linear-gradient(to bottom right, #041D56, #102574, #276DA9);
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/dottedbg.png');
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.7; 
+  pointer-events: none;
+}
+
+
