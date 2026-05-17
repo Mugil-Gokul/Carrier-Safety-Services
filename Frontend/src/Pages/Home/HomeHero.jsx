@@ -17,15 +17,6 @@ const logos = [
 const HomeHero = () => {
   return (
     <section className="relative min-h-screen overflow-hidden px-5 py-4">
-      {/* dotted background */}
-      <div
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage:
-            "radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px)",
-          backgroundSize: "18px 18px",
-        }}
-      />
 
       {/* Hero Card */}
       <motion.div
@@ -68,16 +59,7 @@ const HomeHero = () => {
               Think For Carrier
             </motion.h1>
 
-            <motion.button
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.96 }}
-              className="mt-10 bg-[#ff3131] hover:bg-[#ff4545] text-white uppercase tracking-[3px] text-sm px-10 py-4 rounded-full transition-all duration-300 shadow-[0_10px_30px_rgba(255,49,49,0.35)]"
-            >
-              Contact Us
-            </motion.button>
+            
           </div>
 
           {/* Bottom Content */}
@@ -92,22 +74,16 @@ const HomeHero = () => {
               Moving Target
             </motion.p>
 
-            {/* Logos */}
-            <motion.div
+            <motion.button
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1.2 }}
-              className="flex flex-wrap items-center gap-8 sm:gap-12 text-white/95"
+              transition={{ delay: 0.7 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.96 }}
+              className="mt-10 bg-[#ff3131] hover:bg-[#ff4545] text-white uppercase tracking-[3px] text-sm px-10 py-4 rounded-full transition-all duration-300 shadow-[0_10px_30px_rgba(255,49,49,0.35)]"
             >
-              {logos.map((logo, index) => (
-                <div
-                  key={index}
-                  className="text-lg sm:text-xl font-semibold tracking-wide opacity-90"
-                >
-                  {logo}
-                </div>
-              ))}
-            </motion.div>
+              Contact Us
+            </motion.button>
           </div>
         </div>
       </motion.div>
