@@ -37,7 +37,7 @@ const AboutHero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35 }}
             viewport={{ once: true }}
-            className="text-black text-[2.2rem] sm:text-[3rem] md:text-[4rem] font-semibold leading-tight mb-4 max-w-3xl"
+            className="text-black text-[2.2rem] sm:text-[3rem] md:text-[4rem] font-medium leading-tight mb-4 max-w-3xl"
           >
             Transforming logistics for a safer tomorrow
           </motion.h2>
@@ -48,7 +48,7 @@ const AboutHero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.45 }}
             viewport={{ once: true }}
-            className="max-w-3xl text-black/90 text-sm sm:text-base md:text-3xl leading-relaxed tracking-wide font-light"
+            className="max-w-3xl text-black/90 text-sm sm:text-base md:text-2xl leading-relaxed tracking-wide font-light"
           >
             Carrier Safety Logistics is dedicated to building a safer future by
             enhancing logistics operations with innovative solutions that

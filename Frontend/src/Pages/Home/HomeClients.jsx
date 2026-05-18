@@ -1,37 +1,52 @@
 import React from "react";
 import { motion } from "framer-motion";
+import RIBS from "../../assets/RIBS.webp"
+import UT from "../../assets/UT.webp"
+import ST from "../../assets/ST.webp"
+import WTI from "../../assets/WTI.webp"
+import TXLI from "../../assets/TXLI.webp"
+import DM from "../../assets/DM.webp"
+import NL from "../../assets/NL.webp"
+import LFT from "../../assets/LFT.webp"
+import CFE from "../../assets/CFE.webp"
 
 const clients = [
   {
     name: "Ribs Transport",
-    logo:
-      "https://upload.wikimedia.org/wikipedia/commons/3/3f/FedEx_Express_logo.svg",
+    logo: RIBS,
   },
   {
     name: "U Trans",
-    logo:
-      "https://upload.wikimedia.org/wikipedia/commons/5/59/UPS_Logo_Shield_2017.svg",
+    logo: UT,
   },
   {
     name: "Sun Transportation",
-    logo:
-      "https://upload.wikimedia.org/wikipedia/commons/8/8a/DHL_Logo.svg",
+    logo: ST,
+  },
+  {
+    name: "WTI",
+    logo: WTI,
+  },
+  {
+    name: "TXLI",
+    logo: TXLI,
+  },
+  {
+    name: "DM Express",
+    logo: DM,
   },
   {
     name: "Navi Logistics",
-    logo:
-      "https://upload.wikimedia.org/wikipedia/commons/0/0e/Maersk_Group_Logo.svg",
+    logo: NL,
   },
   {
-    name: "Lion Force",
-    logo:
-      "https://upload.wikimedia.org/wikipedia/commons/5/54/Scania_logo.svg",
+    name: "LFT",
+    logo: LFT,
   },
   {
-    name: "U Trans 2",
-    logo:
-      "https://upload.wikimedia.org/wikipedia/commons/5/59/UPS_Logo_Shield_2017.svg",
-  },
+    name: "CFE",
+    logo: CFE,
+  }
 ];
 
 const HomeClients = () => {
@@ -54,14 +69,14 @@ const HomeClients = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="text-white text-5xl md:text-7xl font-light tracking-[4px]"
+              className="text-3xl md:text-6xl font-medium text-center mb-20 text-white tracking-wider"
             >
               Clients
             </motion.h2>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="grid grid-cols-2 grid-rows-3">
+          <div className="grid grid-cols-2 grid-rows-3 bg-white">
             {clients.map((client, index) => (
               <motion.div
                 key={index}
@@ -79,15 +94,15 @@ const HomeClients = () => {
                   flex items-center justify-center
                   min-h-[180px]
                   p-8
-                  border-white/20
+                  border-black/30
                   
                   ${
                     index !== 1 && index !== 3 && index !== 5
                       ? "border-r"
-                      : ""
+                      : "border-b"
                   }
 
-                  ${index !== 4 && index !== 5 ? "border-b" : ""}
+                  ${index !== 4 && index !== 5 ? "border-b" : "border-b"}
                 `}
               >
                 <motion.div

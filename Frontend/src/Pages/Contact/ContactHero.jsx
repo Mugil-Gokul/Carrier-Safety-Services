@@ -26,7 +26,7 @@ const ContactHero = () => {
             whileInView={{ opacity: 1, letterSpacing: "0.08em" }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-blue-600 text-sm tracking-[0.12em] mb-6 text-left"
+            className="text-blue-600 text-md tracking-[0.12em] mb-6 text-left"
           >
             CONTACT US
           </motion.p>
@@ -37,7 +37,7 @@ const ContactHero = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35 }}
             viewport={{ once: true }}
-            className="text-black text-[2rem] sm:text-[2.8rem] md:text-[3.8rem] font-semibold leading-tight max-w-4xl text-left mb-6"
+            className="text-black text-[2rem] sm:text-[2.8rem] md:text-[3.8rem] font-medium leading-tight max-w-4xl text-left mb-6"
           >
             Let’s connect and build safer logistics solutions together
           </motion.h2>

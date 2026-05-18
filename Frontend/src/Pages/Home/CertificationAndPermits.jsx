@@ -1,30 +1,76 @@
 import React from "react";
 import { motion } from "framer-motion";
+import CSA from "../../assets/CSA.webp"
+import CTAPAT from "../../assets/CTPAT.webp"
+import DOT from "../../assets/DOT.webp"
+import DTOPS from "../../assets/DTOPS.webp"
+import FE from "../../assets/FE.webp"
+import IFTA from "../../assets/IFTA.webp"
+import IRS from "../../assets/IRS.webp"
+import MTO from "../../assets/MTO.webp"
+import PIP from "../../assets/PIP.webp"
+import SCAC from "../../assets/SCAC.webp"
+import SMS from "../../assets/SMS.webp"
+import SW from "../../assets/SW.webp"
+import URS from "../../assets/URS.webp"
+import WSIB from "../../assets/WSIB.webp"
 
 const certifications = [
   {
-    name: "Chartwells",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/7/74/Chartwells_logo.svg",
+    name: "CSA",
+    logo: CSA,
   },
   {
-    name: "Aramark",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/32/Aramark_logo.svg",
+    name: "CTPAT",
+    logo: CTAPAT,
   },
   {
-    name: "Starship",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/0/06/Starship_Technologies_logo.svg",
+    name: "DOT",
+    logo: DOT,
   },
   {
-    name: "FedEx",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/7/7e/FedEx_Express.svg",
+    name: "DTOPS",
+    logo: DTOPS,
   },
   {
-    name: "UPS",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/6/6b/United_Parcel_Service_logo_2014.svg",
+    name: "FE",
+    logo: FE,
   },
   {
-    name: "DHL",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/a/ac/DHL_Logo.svg",
+    name: "IFTA",
+    logo: IFTA,
+  },
+  {
+    name: "IRS",
+    logo: IRS,
+  },
+  {
+    name: "MTO",
+    logo: MTO,
+  },
+  {
+    name: "PIP",
+    logo: PIP,
+  },
+  {
+    name: "SCAC",
+    logo: SCAC,
+  },
+  {
+    name: "SMS",
+    logo: SMS,
+  },
+  {
+    name: "SW",
+    logo: SW,
+  },
+  {
+    name: "URS",
+    logo: URS,
+  },
+  {
+    name: "WSIB",
+    logo: WSIB
   },
 ];
 
@@ -41,7 +87,7 @@ const CertificationAndPermits = () => {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-3xl md:text-5xl font-semibold text-center mb-20 text-white"
+          className="text-3xl md:text-5xl font-medium text-center mb-20 text-white tracking-wider"
         >
           Certifications And Permits
         </motion.h2>
@@ -74,7 +120,7 @@ const CertificationAndPermits = () => {
                 <img
                   src={item.logo}
                   alt={item.name}
-                  className="h-10 md:h-16 w-auto object-contain brightness-0 invert opacity-95"
+                  className="h-10 md:h-16 w-auto object-contain"
                 />
               </motion.div>
             ))}

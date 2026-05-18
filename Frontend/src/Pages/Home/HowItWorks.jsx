@@ -10,23 +10,23 @@ const tabs = [
       "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    title: "SAFETY INSPECTION",
+    title: "Review Improvement Plan",
     description:
-      "COMPLETE SAFETY INSPECTIONS HELP YOUR BUSINESS STAY COMPLIANT AND SECURE.",
+      "Address any problems uncovered with a strategic plan.",
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    title: "RISK ASSESSMENT",
+    title: "Implement Processes & Procedures",
     description:
-      "IDENTIFY RISKS EARLY AND IMPROVE YOUR OPERATIONS WITH PROFESSIONAL GUIDANCE.",
+      "CSS will take the guess work out of what changes need to be implemented.",
     image:
       "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop",
   },
   {
-    title: "DRIVER TRAINING",
+    title: "Peace Of Mind From Reduced Risk",
     description:
-      "PROPER TRAINING ENSURES DRIVERS FOLLOW REGULATIONS AND DRIVE SAFELY.",
+      "Stop guessing whether you’re in compliance and be confident in your efforts.",
     image:
       "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop",
   },
@@ -41,7 +41,7 @@ const HowItWorks = () => {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-3xl md:text-5xl font-semibold text-center mb-14 text-white"
+        className="text-3xl md:text-5xl font-medium text-center mb-14 text-white"
       >
         How It Works
       </motion.h2>
@@ -58,14 +58,14 @@ const HowItWorks = () => {
       >
         {/* Tabs */}
         <div className="w-full flex justify-center mb-12">
-          <div className="bg-[#d5d5d5] rounded-full p-2 flex flex-wrap md:flex-nowrap items-center justify-center gap-2 md:gap-0 w-full md:w-fit">
+          <div className="bg-[#d5d5d5] rounded-sm md:rounded-full p-2 flex flex-wrap md:flex-nowrap items-center justify-center gap-2 md:gap-0 w-full md:w-fit">
             {tabs.map((tab, index) => (
               <motion.button
                 key={index}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => setActiveTab(index)}
-                className={`px-6 md:px-10 py-4 rounded-full text-[11px] md:text-xs tracking-[2px] font-bold transition-all duration-300 leading-tight min-w-[150px]
+                className={`px-6 md:px-10 py-4 rounded-full text-[11px] md:text-xs tracking-[2px] font-bold transition-all duration-300 leading-tight min-w-[150px] uppercase
                   
                   ${
                     activeTab === index

@@ -26,10 +26,7 @@ const GetInTouch = () => {
             whileInView={{ opacity: 1, letterSpacing: "0.08em" }}
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-black text-[2.2rem] sm:text-[3rem] md:text-[4rem] font-light tracking-[0.08em] mb-8"
-            // style={{
-            //   fontFamily: "'Courier New', monospace",
-            // }}
+            className="text-black text-[2.2rem] sm:text-[3rem] md:text-[4rem] font-medium tracking-[0.02em] mb-8"
           >
             Get In Touch
           </motion.h2>
@@ -40,7 +37,7 @@ const GetInTouch = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.45 }}
             viewport={{ once: true }}
-            className="max-w-4xl text-black/90 text-sm sm:text-base md:text-lg leading-relaxed tracking-[0.08em] font-medium"
+            className="max-w-4xl text-black/90 text-sm sm:text-base md:text-lg leading-relaxed tracking-[0.02em] font-medium"
           >
             Maintaining Compliance When You Have A Fleet Is Tough. Most
             Businesses Struggle To Keep Up To Date With Constantly Changing DOT

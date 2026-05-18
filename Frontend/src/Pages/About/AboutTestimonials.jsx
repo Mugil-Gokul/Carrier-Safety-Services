@@ -43,47 +43,52 @@ const AboutTestimonials = () => {
   };
 
   return (
-    <section className="relative w-full overflow-hidden py-14 px-5">
-
+    <section className="relative w-full overflow-hidden py-10 sm:py-14 px-4 sm:px-5">
+      
       {/* Main Container */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="relative z-10 max-w-7xl mx-auto bg-[#f4f4f4] rounded-[30px] px-6 md:px-10 py-8 md:py-10 shadow-2xl"
+        className="relative z-10 max-w-7xl mx-auto bg-[#f4f4f4] rounded-[24px] md:rounded-[30px] px-5 sm:px-6 md:px-10 py-8 sm:py-10 shadow-2xl"
       >
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* LEFT SIDE */}
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-14 items-center">
+          
+          {/* ================= LEFT SIDE ================= */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
             viewport={{ once: true }}
-            className="flex flex-col justify-between h-full"
+            className="flex flex-col justify-between h-full text-center lg:text-left"
           >
+            
             <div>
-              <h2 className="text-[#111] text-3xl md:text-5xl font-light leading-tight">
+              
+              <h2 className="text-[#111] text-[32px] sm:text-[42px] md:text-5xl font-light leading-tight">
                 From our
               </h2>
 
-              <h2 className="text-[#111] text-4xl md:text-6xl font-bold leading-tight">
+              <h2 className="text-[#111] text-[40px] sm:text-[54px] md:text-6xl font-bold leading-tight">
                 community.
               </h2>
 
-              <p className="text-gray-600 text-sm md:text-base leading-7 mt-6 max-w-md">
+              <p className="text-gray-600 text-[14px] sm:text-[15px] md:text-base leading-7 mt-5 sm:mt-6 max-w-md mx-auto lg:mx-0">
                 Here’s what other subscribers had to say about Production
                 Online.
               </p>
             </div>
 
             {/* Arrows */}
-            <div className="flex items-center gap-4 mt-8">
+            <div className="flex items-center justify-center lg:justify-start gap-4 mt-8">
+              
               <motion.button
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={prevSlide}
-                className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-black text-lg bg-white"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gray-300 flex items-center justify-center text-black text-base sm:text-lg bg-white"
               >
                 <FaArrowLeft />
               </motion.button>
@@ -92,33 +97,38 @@ const AboutTestimonials = () => {
                 whileHover={{ scale: 1.08 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={nextSlide}
-                className="w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center text-black text-lg bg-white"
+                className="w-11 h-11 sm:w-12 sm:h-12 rounded-full border border-gray-300 flex items-center justify-center text-black text-base sm:text-lg bg-white"
               >
                 <FaArrowRight />
               </motion.button>
             </div>
           </motion.div>
 
-          {/* RIGHT SIDE */}
+          {/* ================= RIGHT SIDE ================= */}
           <div className="relative">
+            
             <AnimatePresence mode="wait">
+              
               <motion.div
                 key={activeIndex}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -20 }}
                 transition={{ duration: 0.5 }}
+                className="text-center lg:text-left"
               >
+                
                 {/* Quote Icon */}
-                <FaQuoteLeft className="text-[#1b2d8d] text-3xl mb-5" />
+                <FaQuoteLeft className="text-[#1b2d8d] text-2xl sm:text-3xl mb-5 mx-auto lg:mx-0" />
 
                 {/* Quote */}
-                <h3 className="text-[#111] text-2xl md:text-4xl font-medium leading-[1.5] max-w-2xl">
+                <h3 className="text-[#111] text-[24px] sm:text-[32px] md:text-4xl font-medium leading-[1.5] max-w-2xl">
                   “{testimonials[activeIndex].quote}”
                 </h3>
 
                 {/* User */}
-                <div className="flex items-center gap-4 mt-8">
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-8">
+                  
                   <img
                     src={testimonials[activeIndex].image}
                     alt={testimonials[activeIndex].name}
@@ -135,6 +145,7 @@ const AboutTestimonials = () => {
                     </p>
                   </div>
                 </div>
+
               </motion.div>
             </AnimatePresence>
           </div>

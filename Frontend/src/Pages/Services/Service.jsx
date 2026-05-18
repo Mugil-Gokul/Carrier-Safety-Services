@@ -4,6 +4,7 @@ import ServiceIntro from './ServiceIntro'
 import ServiceHero from './ServiceHero'
 import ServiceTM from './ServiceTM'
 import ServiceListing from './ServiceListing'
+import HomeServices from '../Home/HomeServices'
 
 const Service = () => {
   return (
@@ -11,7 +12,8 @@ const Service = () => {
     <ServiceHero/>
     <ServiceIntro/>
     <ServiceTM/>
-    <ServiceListing/>
+    <HomeServices/>
+    {/* <ServiceListing/> */}
     <GetInTouch/>
     </>
   )

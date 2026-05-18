@@ -26,7 +26,7 @@ const services = [
     title: "DOT Audit Management, Fine Negotiation, and Ratings Upgrades",
     description:
       "The staff of CSS can review your FMCSA / DOT audit prior to a rating being issued to ensure that only valid violations are recorded. Our staff is also available to manage your FMCSA / DOT audit and interface with the FMCSA investigators during the auditing process to help mitigate the negative impact of an FMCSA / DOT compliance review.",
-  }
+  },
 ];
 
 const cardVariants = {
@@ -48,23 +48,31 @@ const cardVariants = {
 const ServiceListing = () => {
   return (
     <section className="relative overflow-hidden">
-      <div className="relative mx-auto px-5 lg:px-10">
-        <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-16">
+      
+      <div className="relative mx-auto px-4 sm:px-5 lg:px-10">
+        
+        <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-12 lg:gap-16">
           
-          {/* LEFT STATIC SECTION */}
+          {/* ================= LEFT STATIC SECTION ================= */}
           <div className="relative">
-            <div className="lg:sticky lg:top-0 lg:h-screen flex items-start pt-24">
+            
+            <div className="lg:sticky lg:top-0 lg:h-screen flex items-start pt-8 sm:pt-10 lg:pt-24">
+              
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
                 viewport={{ once: true }}
+                className="w-full"
               >
-                <h2 className="text-white text-[42px] md:text-[56px] leading-[0.95] font-semibold tracking-[-0.03em]">
+                
+                {/* Heading */}
+                <h2 className="text-white text-[38px] sm:text-[48px] md:text-[56px] leading-[0.95] font-medium text-center lg:text-left">
                   Our Services
                 </h2>
 
-                <p className="mt-8 text-white/90 text-[14px] md:text-[15px] leading-[1.9] uppercase tracking-[0.08em] max-w-[260px]">
+                {/* Description */}
+                <p className="mt-6 sm:mt-8 text-white/90 text-[13px] sm:text-[14px] md:text-[15px] leading-[1.8] md:leading-[1.9] uppercase tracking-[0.06em] md:tracking-[0.08em] max-w-full lg:max-w-[260px] text-center lg:text-left">
                   We provide comprehensive logistics solutions,
                   tailored to meet your unique needs. From
                   warehousing to transportation, we ensure
@@ -74,8 +82,9 @@ const ServiceListing = () => {
             </div>
           </div>
 
-          {/* RIGHT SIDE SCROLLING CONTENT */}
-          <div className="py-24 flex flex-col gap-20">
+          {/* ================= RIGHT SCROLLING SECTION ================= */}
+          <div className="py-10 sm:py-14 lg:py-24 flex flex-col gap-10 sm:gap-14 lg:gap-20">
+            
             {services.map((service, index) => (
               <motion.div
                 key={index}
@@ -85,28 +94,32 @@ const ServiceListing = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
                 whileHover={{ y: -5 }}
-                className="relative border border-white/25 rounded-[34px] p-5 md:p-7 backdrop-blur-sm"
+                className="relative border border-white/25 rounded-[24px] sm:rounded-[30px] lg:rounded-[34px] p-4 sm:p-5 md:p-7 backdrop-blur-sm"
               >
-                <div className="grid grid-cols-1 md:grid-cols-[190px_1fr] gap-8 items-center">
+                
+                <div className="grid grid-cols-1 md:grid-cols-[190px_1fr] gap-6 sm:gap-8 items-center">
                   
-                  {/* Left Placeholder Box */}
-                  <div className="border border-white/30 rounded-[28px] h-[250px] md:h-[290px]" />
+                  {/* Placeholder Box */}
+                  <div className="border border-white/30 rounded-[22px] sm:rounded-[28px] h-[220px] sm:h-[250px] md:h-[290px]" />
 
                   {/* Content */}
                   <div>
-                    <h3 className="text-white text-[28px] md:text-[36px] leading-[1.08] font-medium tracking-[-0.02em]">
+                    
+                    {/* Title */}
+                    <h3 className="text-white text-[24px] md:text-[30px] leading-[1.1] font-serif font-medium text-center md:text-left">
                       {service.title}
                     </h3>
 
-                    <p className="mt-6 text-white/85 text-[14px] md:text-[15px] leading-[1.9] uppercase tracking-[0.06em]">
+                    {/* Description */}
+                    <p className="mt-5 sm:mt-6 text-white/85 text-[13px] sm:text-[14px] md:text-[15px] leading-[1.8] md:leading-[1.9] uppercase tracking-[0.04em] md:tracking-[0.06em] text-center md:text-left">
                       {service.description}
                     </p>
                   </div>
                 </div>
+
               </motion.div>
             ))}
           </div>
-
         </div>
       </div>
     </section>
