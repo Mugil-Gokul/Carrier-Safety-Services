@@ -3,22 +3,22 @@ import { motion } from "framer-motion";
 
 const cultureCards = [
   {
-    title: "INNOVATION",
-    heading: "Redefining What’s Possible",
+    title: "SAFETY",
+    heading: "Safety Comes First",
     description:
-      "We are ushering in a new era of how we relate to food and packaging waste—pushing the envelope on what sustainability can and should look like.",
+      "We prioritize driver safety, fleet compliance, and operational reliability to help transportation companies reduce risk and maintain confidence on the road.",
   },
   {
     title: "COMMITMENT",
-    heading: "Impact That Matters",
+    heading: "Reliable Compliance Support",
     description:
-      "We're committed to leaving this world better than we found it and proving that sustainability and bottom-line savings can go hand in hand.",
+      "For over 15 years, we have helped trucking companies stay DOT compliant with dependable guidance, proactive solutions, and industry expertise.",
   },
   {
     title: "INTEGRITY",
-    heading: "With You Every Step",
+    heading: "Built On Trust & Partnership",
     description:
-      "We aren’t just a transaction, we are a partnership. We are always finding ways to better serve our clients and create deeper impact together.",
+      "We work closely with every client to provide transparent support, practical solutions, and long-term strategies that strengthen fleet operations.",
   },
 ];
 
@@ -29,32 +29,33 @@ const AboutCulture = () => {
       <div className="relative z-10 mx-auto">
         
         {/* ================= TOP CONTENT ================= */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-          className="text-center max-w-3xl mx-auto"
-        >
-          
-          {/* Small Label */}
-          <p className="text-blue-300 uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] md:text-xs mb-3 font-medium">
-            Culture
-          </p>
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="text-center max-w-3xl mx-auto"
+>
+  
+  {/* Small Label */}
+  <p className="text-blue-300 uppercase tracking-[2px] sm:tracking-[3px] text-[10px] sm:text-[11px] md:text-sm mb-3 font-medium">
+    Our Values
+  </p>
 
-          {/* Main Heading */}
-          <h2 className="text-white text-[28px] sm:text-[36px] md:text-4xl font-semibold leading-tight mb-4 px-2">
-            Mission Driven, Values Led
-          </h2>
+  {/* Main Heading */}
+  <h2 className="text-white text-[28px] sm:text-[36px] md:text-4xl font-semibold leading-tight mb-4 px-2">
+    Driven By Safety, Built On Trust
+  </h2>
 
-          {/* Description */}
-          <p className="text-white/70 text-[14px] sm:text-[15px] md:text-base leading-7 sm:leading-8 max-w-2xl mx-auto px-2">
-            At Topanga, our values drive everything we do. From rethinking
-            sustainability in food service to fostering real partnerships with
-            clients, these principles guide us as we work to create smarter,
-            more sustainable kitchens.
-          </p>
-        </motion.div>
+  {/* Description */}
+  <p className="text-white/70 text-[14px] sm:text-[15px] md:text-base leading-7 sm:leading-8 max-w-4xl mx-auto px-2">
+    At Carrier Safety Services, our mission is to help trucking and
+    transportation companies operate safely, efficiently, and confidently.
+    With over 15 years of industry experience, we provide reliable compliance
+    support, practical safety solutions, and long-term partnerships that help
+    fleets stay protected and audit-ready.
+  </p>
+</motion.div>
 
         {/* ================= CARDS ================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 sm:gap-6 mt-10 sm:mt-12">

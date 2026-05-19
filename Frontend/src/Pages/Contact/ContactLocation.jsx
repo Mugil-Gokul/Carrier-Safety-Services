@@ -55,12 +55,11 @@ const ContactLocation = () => {
 
             <p className="text-black/90 text-[14px] sm:text-[15px] md:text-base leading-7 sm:leading-8">
               600 Matheson Blvd W Unit 5,
-              <br />
               Mississauga, ON, L5R 4C1
             </p>
 
             <p className="text-black text-[14px] sm:text-[15px] md:text-base mt-5 sm:mt-6 leading-7">
-              Monday - Friday: 9:00 - 5:00
+              Monday - Friday: 9:00A.M. - 5:00P.M.
             </p>
           </motion.div>
 

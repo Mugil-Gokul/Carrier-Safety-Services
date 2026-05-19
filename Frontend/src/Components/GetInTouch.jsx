@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const GetInTouch = () => {
   return (
@@ -63,7 +64,9 @@ const GetInTouch = () => {
             viewport={{ once: true }}
             className="mt-14 border border-[#ff5a5a] text-[#ff5a5a] px-8 py-3 rounded-full text-sm font-semibold tracking-wide transition-all duration-300"
           >
-            Send A Request
+            <Link to="/contact">
+              Send A Request
+            </Link>
           </motion.button>
         </motion.div>
       </motion.div>

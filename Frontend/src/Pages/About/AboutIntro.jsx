@@ -14,13 +14,13 @@ const AboutIntro = () => {
           transition={{ duration: 1, delay: 0.3 }}
           className="text-[14px] sm:text-[15px] md:text-lg leading-7 sm:leading-8 tracking-wide max-w-5xl mx-auto text-white/90"
         >
-          Failing To Effectively Manage These Factors Will Result In
-          Unnecessarily High Costs And An Increase In Avoidable Risk.
-          It’s No Wonder So Many Companies With Fleets Of Vehicles Are
-          Frustrated Or Confused About How To Maintain DOT Compliance.
-          Carrier Safety Services Consultants Finds Potential Risk And
-          Then Helps You Eliminate It So You Can Sleep Better Knowing
-          You’re In Compliance.
+          For over 15 years, Carrier Safety Services has helped trucking and
+          transportation companies maintain DOT compliance, improve fleet safety,
+          and reduce operational risk. Our experienced consultants identify
+          potential compliance issues before they become costly problems, helping
+          businesses stay audit-ready, protect their drivers, and operate with
+          confidence. We provide reliable safety solutions designed to keep your
+          fleet compliant, efficient, and running smoothly every day.
         </motion.p>
 
       </div>

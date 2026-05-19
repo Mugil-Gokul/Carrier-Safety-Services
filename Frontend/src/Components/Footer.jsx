@@ -49,7 +49,7 @@ const Footer = () => {
               </p>
 
               <p className="text-white font-semibold mt-6 text-sm sm:text-[15px]">
-                Monday - Friday: 9:00 - 5:00
+                Monday - Friday: 9:00A.M. - 5:00P.M.
               </p>
             </div>
 
@@ -147,7 +147,7 @@ const Footer = () => {
           
           {/* Copyright */}
           <p className="text-sm md:text-base text-gray-700 font-medium text-center md:text-left">
-            © 2026 Carrier Safety Services. All Rights Reserved.
+            © 2026 Mugil Technologies Ltd. All Rights Reserved.
           </p>
 
           {/* Social Icons */}
@@ -156,19 +156,19 @@ const Footer = () => {
             {[
               {
                 icon: FaFacebookF,
-                link: "https://facebook.com",
+                // link: "https://facebook.com",
               },
               {
                 icon: FaInstagram,
-                link: "https://instagram.com",
+                // link: "https://instagram.com",
               },
               {
                 icon: FaLinkedinIn,
-                link: "https://linkedin.com",
+                // link: "https://linkedin.com",
               },
               {
                 icon: FaTwitter,
-                link: "https://twitter.com",
+                // link: "https://twitter.com",
               },
             ].map((item, index) => {
               const Icon = item.icon;
@@ -177,7 +177,7 @@ const Footer = () => {
                 <motion.a
                   key={index}
                   href={item.link}
-                  target="_blank"
+                  // target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ y: -5, scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}

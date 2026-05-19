@@ -5,27 +5,27 @@ import { FaArrowLeft, FaArrowRight, FaQuoteLeft } from "react-icons/fa";
 const testimonials = [
   {
     quote:
-      "Production Online has helped me become a better musician and producer than I ever thought possible.",
-    name: "Kyle Weznick",
-    role: "Media Director, Turn Around Music Group",
+      "Carrier Safety Services helped us improve fleet compliance and reduce safety risks across our operations. Their team made the entire process seamless and professional.",
+    name: "David Thompson",
+    role: "Fleet Operations Manager",
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop",
   },
   {
     quote:
-      "Working with this team completely changed the way we manage compliance and safety operations.",
-    name: "Michael Brown",
-    role: "Operations Manager",
+      "Their compliance expertise and hands-on support gave us confidence during our DOT audit preparation. We now operate with better structure and accountability.",
+    name: "Michael Carter",
+    role: "Transportation Director",
     image:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop",
   },
   {
     quote:
-      "Their support and professionalism helped us scale faster while staying fully compliant.",
-    name: "Sarah Johnson",
-    role: "Fleet Coordinator",
+      "Working with Carrier Safety Services has significantly improved our driver safety programs and operational efficiency. Their guidance has been invaluable to our team.",
+    name: "Sarah Williams",
+    role: "Logistics Coordinator",
     image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=400&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=400&auto=format&fit=crop",
   },
 ];
 
@@ -76,8 +76,8 @@ const AboutTestimonials = () => {
               </h2>
 
               <p className="text-gray-600 text-[14px] sm:text-[15px] md:text-base leading-7 mt-5 sm:mt-6 max-w-md mx-auto lg:mx-0">
-                Here’s what other subscribers had to say about Production
-                Online.
+                Hear what trucking companies and fleet operators say about working with
+                Carrier Safety Services.
               </p>
             </div>
 
